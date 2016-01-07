@@ -220,7 +220,7 @@ function create_config( )
     "invite",
     "all"
     },
-    sudo_users = {110626080,103649648,0,tonumber(our_id)},--Sudo users
+    sudo_users = {},--Sudo users
     disabled_channels = {},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
@@ -433,7 +433,7 @@ function cron_plugins()
 end
 
 -- Start and load values
-our_id = 0
+our_id = 70742427
 now = os.time()
 math.randomseed(now)
 started = false
